@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram_bot</title>
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction:column ;
+        max-width: 300px;
+        margin: 200px auto;
+    }
+
+    input,
+    button{
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+#success{
+    display: none;
+    padding: 10px;
+    background-color: #c1e5b8;
+    color: white;
+    text-align: center;
+}
+</style>
+<body>
+
+<!-- 
+    <form id="tg">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="number" name="number" placeholder="Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="success"></div> -->
+
+    <form id="tg" enctype="multipart/form-data">
+        <input type="file" name="document" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="success"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
